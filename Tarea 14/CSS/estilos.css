@@ -38,7 +38,7 @@ body{
     text-align: center;
     text-shadow: 0.5rem 0.5rem 0.5rem  rgb(73, 44, 240);
     position: absolute;
-    top: 10rem;
+    top: 12rem;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
@@ -48,15 +48,15 @@ body{
     list-style-type: none;
     padding-left: 0%;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 8rem;
+    right: 5rem;
     text-align: right;
 }
 
 #elementos-posicionados{
     border: 0.3rem solid rgb(0, 187, 255);
     padding: 5rem;
-    height: 150rem;
+    height: 140rem;
     position: relative;
 }
 
@@ -64,9 +64,11 @@ body{
     border: 0.2rem solid rgb(30, 134, 176);
     width: 40rem;
     height: auto;
-    margin: 0.2rem;
-    position: sticky;
-    top: 30rem;
+    margin: 0.5rem;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0rem;
 }
 
 .AudiRS6 img{
@@ -133,13 +135,33 @@ SI SE DEFINEN VARIAS CONSULTAS DE MEDIOS, SE DEBEN PONER
 EN FORMA DESCENDENTE SEGUN LA MEDIDA DEL DISPOSITIVO. 
 */
 
+/* PANTALLAS DE HASTA 1250px */
 @media screen and (max-width: 1250px) {
 
-    #encabezado h1{
-    left: 25%;
-    font-size: 3rem;
+    #encabezado h1 {
+        left: 50%;
+        font-size: 3rem;
+    }
+
+    .logo {
+        width: 27rem;
+        height: 27rem;
+    }
+
 }
 
+/* PANTALLAS DE HASTA 930px */
+@media screen and (max-width: 930px) {
 
-    
+    #encabezado h1 {
+        left: 50%;
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        width: 22rem;
+        height: 22rem;
+    }
+
 }
+
