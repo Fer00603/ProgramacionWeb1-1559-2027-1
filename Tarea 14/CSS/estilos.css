@@ -13,59 +13,73 @@ body{
 #encabezado{
     border: 0.2rem solid rgb(0, 187, 255);
     font-size: 2rem;
-    position: sticky;
     width: 100%;
     top: 0;
     z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .logo{
     border: 0.2rem solid rgb(0, 187, 255);
-    border-radius: 50%;
+    border-radius: 30%;
     width: 25rem;
-    height: 25rem;
+    height: 30rem;
     overflow: hidden;
 }
 
 .logo img{ 
     width: 100%;
     height: 100%;
-    border-radius: 45%;
+    border-radius: 30%;
     object-fit: cover;
 }
 
 #encabezado h1{
     text-align: center;
     text-shadow: 0.5rem 0.5rem 0.5rem  rgb(73, 44, 240);
-    position: absolute;
     top: 12rem;
     left: 50%;
-    transform: translateX(-50%);
     margin: 0;
+    display: flex;
 }
 
 #navegacion ul{
     list-style-type: none;
     padding-left: 0%;
-    position: absolute;
     top: 8rem;
     right: 5rem;
     text-align: right;
+    display: flex;
+    gap: 1rem;
 }
 
-#elementos-posicionados{
+#contenedor-flexible{
     border: 0.3rem solid rgb(0, 187, 255);
     padding: 5rem;
     height: 140rem;
-    position: relative;
+    /*display: flex vuelve a un contenedor flexible*/
+    display: flex;
+    /*flex-direction: define el eje principal o main axis
+    en el que va a trabajar flexbox (row, column, row-reverse,
+    y column reverse)*/
+    flex-direction: row;
+    /*justify-content: define el eje cruzado o cross-axis
+    con el que va a trabajar flexbox*/
+    align-items: start;
+    /*Justify Content: permite distribuir el espacio de los
+    objetos flexibles 
+    */
+    justify-content: space-evenly;
 }
 
 .AudiRS6{
     border: 0.2rem solid rgb(30, 134, 176);
-    width: 40rem;
-    height: auto;
+    width: 20rem;
+    height: 35rem;
     margin: 0.5rem;
-    position: absolute;
     z-index: 2;
     top: 0;
     left: 0rem;
@@ -73,16 +87,15 @@ body{
 
 .AudiRS6 img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
 .RS7 {
     border: 0.2rem solid rgb(30, 134, 176);
-    width: 40rem;
-    height: auto;
+    width: 20rem;
+    height: 35rem;
     margin: 0.5rem;
-    position: absolute;
     z-index: 2;
     top: 0rem;
     right: 0rem;
@@ -90,38 +103,36 @@ body{
 
 .RS7 img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
 .Han{
     border: 0.2rem solid rgb(30, 134, 176);
-    width: 40rem;
-    height: auto;
+    width: 20rem;
+    height: 35rem;
     margin: 0.5rem;
-    position: absolute;
     bottom: 0rem;
     left: 0rem;
 }
 
 .Han img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .Koenigsegg{
     border: 0.2rem solid rgb(30, 134, 176);
-    width: 40rem;
-    height: auto;
+    width: 20rem;
+    height: 35rem;
     margin: 0.5rem;
-    position: absolute;
     bottom: 0rem;
     right: 0rem;
 }
 
 .Koenigsegg img{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
